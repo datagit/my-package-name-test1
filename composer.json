@@ -1,0 +1,42 @@
+{
+    "name": "datagit/my-package-name-test1",
+    "description": "my-package-name-test1",
+    "keywords": [
+        "datagit",
+        "my-package-name-test1"
+    ],
+    "homepage": "https://github.com/datagit/my-package-name-test1",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Dat",
+            "email": "datagit@yahoo.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Datagit\\MyPackageNameTest1\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Datagit\\MyPackageNameTest1\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
